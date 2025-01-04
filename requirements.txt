@@ -1,0 +1,2 @@
+markitdown==0.0.1a2  # Biblioteca para convertir archivos a Markdown
+pywin32==308       # Solo necesario en Windows para convertir .doc a .docx
