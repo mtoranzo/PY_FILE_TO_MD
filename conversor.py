@@ -72,8 +72,8 @@ def process_directory(input_dir, output_dir):
             print(f"Archivo convertido: {md_file}")
             
             # Eliminar el archivo .docx temporal si se convirtió de .doc
-            if filename.endswith(".docx") and input_file.endswith("x"):
-                os.remove(input_file)
+            # if filename.endswith(".docx") and input_file.endswith("x"):
+            #     os.remove(input_file)
 
 def process_directory_recursive(input_dir, output_dir):
     """
@@ -130,12 +130,12 @@ def process_directory_recursive(input_dir, output_dir):
                     print(f"Error al convertir el archivo {input_file}: {e}")
                 
                 # Eliminar el archivo .docx temporal si se convirtió de .doc
-                if filename.endswith(".docx") and input_file.endswith("x"):
-                    os.remove(input_file)
+                # if filename.endswith(".docx") and input_file.endswith("x"):
+                #     os.remove(input_file)
 
 # Ejemplo de uso
 if __name__ == "__main__":
     input_directory = "H:\\Unidades compartidas\\PROYECTOS\DEALER3\\10_DISEÑO\\04_CASOS DE USO"  # Cambia esto por la ruta de tu directorio de entrada
-    output_directory = "D:\\REPOSITORIOS LOCALES\\DEALER_SERVICES\\07_PY_FILE_TO_MD\\app_data"  # Cambia esto por la ruta de tu directorio de salida
+    output_directory = "D:\\REPOSITORIOS PERSONALES\\PY_FILE_TO_MD\\app_data"  # Cambia esto por la ruta de tu directorio de salida
     process_directory_recursive(input_directory, output_directory)
     print(f"Todos los archivos han sido convertidos y guardados en {output_directory}")
